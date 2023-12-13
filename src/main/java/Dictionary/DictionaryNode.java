@@ -34,6 +34,10 @@ public class DictionaryNode {
         return sign;
     }
 
+    public String getCode() {
+        return code;
+    }
+
     @Override
     public String toString() {
         return (char)sign + ": " + code;

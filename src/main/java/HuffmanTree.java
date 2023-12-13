@@ -10,10 +10,18 @@ public class HuffmanTree {
     public HuffmanTree(PriorityQueue priorityQueue) {
         this.priorityQueue = priorityQueue;
         this.dictionary = new Dictionary();
-        makeHTree();
-        makeDictionary(huffmanTree.getRoot(), new StringBuilder(), 0);
-    }
 
+        makeHTree();
+
+        makeDictionary(huffmanTree.getRoot(), new StringBuilder(), 0);
+
+    }
+    public Node getRoot() {
+        return huffmanTree.getRoot();
+    }
+    public Dictionary getDictionary() {
+        return dictionary;
+    }
     private void makeHTree() {
         int size = priorityQueue.size();
         for(int i=0; i < size -1; i++) {
@@ -54,6 +62,21 @@ public class HuffmanTree {
             System.out.println(root + " | " + level);
             readHTree(root.getLeft(), level);
             readHTree(root.getRight(), level);
+        }
+    }
+
+    private void codeTreeToFile(Node root) {
+        if(root.getLeft() == null && root.getRight() == null) {
+            System.out.print('1');
+            System.out.print ((char)root.getSign());
+        } else {
+            System.out.print('0');
+        }
+        if(root.getLeft() != null) {
+            codeTreeToFile(root.getLeft());
+        }
+        if(root.getRight() != null) {
+            codeTreeToFile(root.getRight());
         }
     }
 

@@ -1,6 +1,5 @@
 import File.File;
 import PriorityQueue.PriorityQueue;
-import Tree.Tree;
 
 import java.io.IOException;
 
@@ -10,5 +9,8 @@ public class Huffman {
     public Huffman(String[] args) throws IOException {
         this.file = new File(args);
         this.huffmanTree = new HuffmanTree(new PriorityQueue(file.readFileToTree()));
+        this.file.codeTreeToFile(this.huffmanTree.getRoot());
+        this.file.codeFile(this.huffmanTree.getDictionary());
+
     }
 }

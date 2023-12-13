@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4012503f-363d-40c7-9d3c-a9bfb4cd76fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Files/niemanie.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Files/niemaniecomp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dictionary/Dictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dictionary/DictionaryNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/File/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Huffman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HuffmanTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PriorityQueue/PriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tree/Tree.java" afterDir="false" />
+    <list default="true" id="4012503f-363d-40c7-9d3c-a9bfb4cd76fe" name="Changes" comment="lets gooo">
+      <change afterPath="$PROJECT_DIR$/src/main/Files/pantadeusz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/File/Union.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Files/niemaniecomp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Files/niemaniecomp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dictionary/DictionaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dictionary/DictionaryNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/File/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/File/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Huffman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HuffmanTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,11 +104,26 @@
       <updated>1702329631825</updated>
       <workItem from="1702329632842" duration="1561000" />
       <workItem from="1702380007378" duration="6529000" />
-      <workItem from="1702421213907" duration="3259000" />
+      <workItem from="1702421213907" duration="3702000" />
+      <workItem from="1702504319840" duration="4109000" />
+      <workItem from="1702508819964" duration="817000" />
     </task>
+    <task id="LOCAL-00001" summary="lets gooo">
+      <option name="closed" value="true" />
+      <created>1702424486017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702424486017</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lets gooo" />
+    <option name="LAST_COMMIT_MESSAGE" value="lets gooo" />
   </component>
 </project>
