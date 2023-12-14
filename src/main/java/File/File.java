@@ -83,8 +83,7 @@ public class File {
         tmp <<= (Byte.SIZE - counter);
         tmp &= 0xFF;
         output.write(tmp & 0b11111111);
-        saveCounter();
-//        check();
+        saveCounter(dictionary.getLeavesNum());
     }
 
     public void codeTreeToFile(Node root) throws IOException {
@@ -121,12 +120,14 @@ public class File {
         }
     }
 
-    private void saveCounter() throws IOException {
+    private void saveCounter(int num) throws IOException {
         output.seek(0);
         byte[] remainingBytes = new byte[(int) (output.length())];
         output.readFully(remainingBytes);
         output.seek(0);
         output.write(counter);
+        output.write(num);
         output.write(remainingBytes);
     }
+
 }
