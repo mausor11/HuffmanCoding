@@ -7,10 +7,11 @@ public class HuffmanTree {
     private Dictionary dictionary;
     private PriorityQueue priorityQueue;
     private Tree huffmanTree;
+    private int leaves;
     public HuffmanTree(PriorityQueue priorityQueue) {
         this.priorityQueue = priorityQueue;
         this.dictionary = new Dictionary();
-
+        this.leaves = priorityQueue.size();
         makeHTree();
 
         makeDictionary(huffmanTree.getRoot(), new StringBuilder(), 0);

@@ -4,7 +4,12 @@ public class Node{
     private int counter;
     private int sign;
     private Node left, right;
-
+    public Node() {
+        this.sign = 0;
+        this.counter = 0;
+        this.left = null;
+        this.right = null;
+    }
     public Node(int sign) {
         this.sign = sign;
         this.counter = 1;

@@ -2,9 +2,9 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 public class HuffmanDecompression {
-    int leaves;
-    int counter;
-    final RandomAccessFile input;
+    private int leaves;
+    private int counter;
+    private final RandomAccessFile input;
 
     public HuffmanDecompression(RandomAccessFile input) throws IOException {
         this.input = input;
@@ -17,4 +17,11 @@ public class HuffmanDecompression {
         leaves = input.readByte();
     }
 
+    public int getCounter() {
+        return counter;
+    }
+
+    public int getLeaves() {
+        return leaves;
+    }
 }
