@@ -22,6 +22,10 @@ public class Node{
         this.left = null;
         this.right = null;
     }
+    public void setSign(int sign) {
+        this.sign = sign;
+    }
+
     public void setLeft(Node left) {
         this.left = left;
     }
@@ -39,6 +43,9 @@ public class Node{
     }
     public void counterPlus() {
         counter++;
+    }
+    public void counterMinus() {
+        counter--;
     }
     public int getCounter() {
         return counter;

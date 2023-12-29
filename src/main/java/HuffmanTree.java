@@ -17,6 +17,11 @@ public class HuffmanTree {
         makeDictionary(huffmanTree.getRoot(), new StringBuilder(), 0);
 
     }
+    public HuffmanTree(Tree tree) {
+        this.huffmanTree = tree;
+        this.dictionary = new Dictionary();
+        makeDictionary(huffmanTree.getRoot(), new StringBuilder(), 0);
+    }
     public Node getRoot() {
         return huffmanTree.getRoot();
     }

@@ -5,13 +5,13 @@ import PriorityQueue.PriorityQueue;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-
+import Tree.Tree;
 public class Huffman {
     private File file;
     private FileD fileD;
     private HuffmanTree huffmanTree;
+    private Tree decompTree;
     private enum Type {COMPRESSION, DECOMPRESSION}
-    private Type type;
     public Huffman(String[] args) throws IOException {
         if(check(args) == Type.COMPRESSION) {
             this.file = new File(args);
@@ -20,6 +20,8 @@ public class Huffman {
             this.file.codeFile(this.huffmanTree.getDictionary());
         } else {
             this.fileD = new FileD(args);
+            this.huffmanTree = new HuffmanTree(fileD.readTreeFromFile());
+            this.fileD.decodefile(this.huffmanTree.getRoot());
         }
 
     }
