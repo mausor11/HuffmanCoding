@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4012503f-363d-40c7-9d3c-a9bfb4cd76fe" name="Changes" comment="feat: decompression start">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Files/niemanie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Files/pantadeusz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/File/FileD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/File/FileD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Huffman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HuffmanDecompression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HuffmanTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tree/Node.java" afterDir="false" />
-    </list>
+    <list default="true" id="4012503f-363d-40c7-9d3c-a9bfb4cd76fe" name="Changes" comment="feat: working compression and decompression" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +24,26 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mausor11"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="mausor11" />
+        <option name="repository" value="HuffmanCoding" />
+      </RepoCoordinatesHolder>
+    </option>
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e3730d76-bc80-4fef-a7f3-52c3610cfaf6" />
+        <option name="url" value="https://github.com/mausor11/HuffmanCoding.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -122,7 +133,7 @@
       <workItem from="1703627511649" duration="3488000" />
       <workItem from="1703688146321" duration="1238000" />
       <workItem from="1703848392675" duration="588000" />
-      <workItem from="1703851262292" duration="5139000" />
+      <workItem from="1703851262292" duration="5401000" />
     </task>
     <task id="LOCAL-00001" summary="lets gooo">
       <option name="closed" value="true" />
@@ -148,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703627535772</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: working compression and decompression">
+      <option name="closed" value="true" />
+      <created>1703867869719</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703867869719</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +184,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="decompression" />
+                        <option value="origin/decompression" />
                       </list>
                     </value>
                   </entry>
@@ -181,6 +200,7 @@
     <MESSAGE value="lets gooo" />
     <MESSAGE value="feat: compression" />
     <MESSAGE value="feat: decompression start" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: decompression start" />
+    <MESSAGE value="feat: working compression and decompression" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: working compression and decompression" />
   </component>
 </project>
