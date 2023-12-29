@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4012503f-363d-40c7-9d3c-a9bfb4cd76fe" name="Changes" comment="feat: compression">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HuffmanDecompression.java" afterDir="false" />
+    <list default="true" id="4012503f-363d-40c7-9d3c-a9bfb4cd76fe" name="Changes" comment="feat: decompression start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Files/niemaniecomp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Files/niemaniecomp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/File/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/File/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Files/niemanie.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Files/pantadeusz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/File/FileD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/File/FileD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Huffman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HuffmanDecompression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HuffmanTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tree/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -36,26 +44,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/QuickMath&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "decompression",
+    "last_opened_file_path": "D:/QuickMath",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="HuffmanCoding" />
-      <option name="PROGRAM_PARAMETERS" value="src/main/Files/pantadeuszcomp.txt src/main/Files/pantadeuszcomp.txt" />
+      <option name="PROGRAM_PARAMETERS" value="-d src/main/Files/pantadeuszcomp.txt src/main/Files/pantadeusz.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,6 +114,15 @@
       <workItem from="1702504319840" duration="4109000" />
       <workItem from="1702508819964" duration="817000" />
       <workItem from="1702511260464" duration="1818000" />
+      <workItem from="1702555949768" duration="1981000" />
+      <workItem from="1702644032506" duration="6000" />
+      <workItem from="1703170111512" duration="655000" />
+      <workItem from="1703623180554" duration="64000" />
+      <workItem from="1703623826304" duration="3130000" />
+      <workItem from="1703627511649" duration="3488000" />
+      <workItem from="1703688146321" duration="1238000" />
+      <workItem from="1703848392675" duration="588000" />
+      <workItem from="1703851262292" duration="5139000" />
     </task>
     <task id="LOCAL-00001" summary="lets gooo">
       <option name="closed" value="true" />
@@ -122,15 +140,47 @@
       <option name="project" value="LOCAL" />
       <updated>1702511423950</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: decompression start">
+      <option name="closed" value="true" />
+      <created>1703627535772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703627535772</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="decompression" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lets gooo" />
     <MESSAGE value="feat: compression" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: compression" />
+    <MESSAGE value="feat: decompression start" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: decompression start" />
   </component>
 </project>

@@ -11,25 +11,16 @@ public class File {
     private RandomAccessFile input;
     private RandomAccessFile output;
     private int counter;
+
     private int tmp;
     public File(String[] args) {
-        if(args.length < 3) {
-            validateFiles(args[0], args[1]);
-            try {
-                this.input = new RandomAccessFile(args[0], "r");
-                this.output = new RandomAccessFile(args[1], "rw");
-                this.counter = 0;
-            } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
-            }
-        } else {
-            throw new IllegalArgumentException("Too much parameters added");
-        }
-    }
+        try {
+            this.input = new RandomAccessFile(args[1], "r");
+            this.output = new RandomAccessFile(args[2], "rw");
+            this.counter = 0;
 
-    private void validateFiles(String inputURL, String outputURL) {
-        if (inputURL == null || outputURL == null) {
-            throw new IllegalArgumentException("Check if name of input and output files is added!");
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
         }
     }
     public Tree readFileToTree() throws IOException {
@@ -47,7 +38,6 @@ public class File {
         }
         return tree;
     }
-
     public void check() throws IOException {
         int byteRead;
         output.seek(0);
